@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1000px;
   margin-inline: auto;
   padding-inline: 20px;
   overflow: hidden;
@@ -32,24 +32,24 @@ body {
 }
 a {
   text-decoration: none;
-
+  font-size: 4rem;
   font-weight: 500;
 }
 p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4.8rem;
   font-weight: 900;
 }
 h2 {
   color: white;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 4.8rem;
+  font-weight: 900;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: white;
   font-weight: 400;
 }
@@ -57,22 +57,19 @@ h3 {
 /* ----------header------------ */
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(images/main.jpg);
-  /* background-repeat: no-repeat; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(images/mainheader.jpg);
   background-size: cover;
-  /* background-position: center; */
-  /* width: 100%; */
-  /* min-width: 100%; */
-  /* height: 100vh; */
-  /* padding: 10px 8%; */
+  background-position: center;
+
+  min-width: 100%;
+  /* height: 120vh; */
 }
 
 .header-top {
-  z-index: 2;
   justify-content: space-between;
   position: relative;
-  height: 90px;
+  height: 85px;
 }
 
 .logo {
@@ -80,14 +77,15 @@ h3 {
 }
 
 .sign-in-btn {
-  min-height: 2rem;
-  font-size: 0.875rem;
+  /* min-height: 2rem; */
+  font-size: 1.4rem;
   color: white;
   background-color: #e50914;
-  padding: 4px 16px;
-  border-radius: 0.25rem;
+  padding: 5px 16px;
+  border-radius: 0.5rem;
   border-color: rgba(128, 128, 128, 0.7);
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 22px;
 }
 
 .sign-in-btn:hover {
@@ -98,7 +96,6 @@ h3 {
   position: relative;
   margin-top: 194px;
   color: white;
-  z-index: 2;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -106,7 +103,7 @@ h3 {
 
 .header-text h1 {
   margin-bottom: 16px;
-  font-size: 3rem;
+
   font-weight: 900;
 }
 .header-text h3 {
@@ -116,47 +113,53 @@ h3 {
 /* ------form------- */
 
 .email-signup input {
-  font-size: 16px;
-  margin-top: 20px;
-  font-weight: 400;
-  line-height: 1.5rem;
   width: 376px;
   height: 55px;
-  color: #fff;
-  border: 0.5px solid #5e5e5e;
-  border-radius: 4px;
-  background-color: #181613;
   padding: 24px 16px 8px;
+  background: rgba(22, 22, 22, 0.7);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  border: 0.5px solid rgba(128, 128, 128, 0.7);
+  border-radius: 6.4px;
   transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s;
   outline: 0;
+  margin-top: 20px;
+}
+.email-signup input::placeholder {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu;
+  color: #b7b7b7;
+
   position: relative;
-  left: 180px;
-  z-index: 2;
+  bottom: 0.7rem;
+  left: 0.1rem;
 }
 
 .form {
+  margin-bottom: 120px;
   justify-content: center;
-  position: relative;
-  z-index: 2;
 }
 
 .get-started-btn {
-  color: white !important;
-  position: relative;
-  left: 190px;
-  z-index: 2;
-  margin-top: 16px;
-  text-align: center;
-  font-size: 1.5rem;
+  min-height: 5.6rem;
+  padding: 13px 16px 15px 23px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-weight: bold;
   background-color: #e50914;
-  padding: 12px 24px;
-  border-radius: 6px;
   background-repeat: no-repeat;
-  font-weight: 550x;
+  color: white !important;
+  margin-top: 10px;
+  margin-left: 7px;
+  margin-bottom: 12px;
+  border-radius: 6px;
   border: 0px transparent;
   cursor: pointer;
-  line-height: 1;
+  text-align: center;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
 }
+
 .get-started-btn a {
   color: white;
 }
@@ -168,16 +171,22 @@ h3 {
 .arrow {
   position: relative;
   top: 3.8px;
+  left: -7px;
 }
 
 /* -- --------features-section--------  */
 
 .features-section {
-  z-index: 2;
-  border-top: 8px solid #3a3a3a;
+  border-top: 8px solid #232323;
   padding: 72px 8%;
+  display: flex;
   flex-direction: column;
   background-color: #000000;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
 }
 .text {
   flex-basis: 50%;
@@ -198,6 +207,10 @@ h3 {
 }
 #last-feature {
   border-bottom: 8px solid #3a3a3a;
+}
+#first-feature {
+  display: flex;
+  flex-direction: row;
 }
 
 /* -----------FAQS-section-------- */
@@ -271,32 +284,20 @@ input[type="radio"] {
 }
 /* ----------- footer-form--------- */
 
-.footer-form p {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 47px;
-  margin-bottom: 8px;
-  font-size: 20px;
-}
 .footer-form {
-  margin-bottom: 60px;
+  flex-direction: column;
+  margin-bottom: 57px;
+  margin-top: 47px;
+}
+.footer-form p {
+  font-size: 20px;
 }
 
 /* ------------footer---------- */
 .footer {
-  border-top: 8px solid #3a3a3a;
+  height: 460px;
+  border-top: 8px solid #232323;
 }
-.footer-container a {
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-}
-.first-link {
-  margin-top: 70px;
-  margin-left: 30px;
-}
-
 .footer-container {
   margin-top: 5px;
   padding: 40px 30px;
@@ -304,42 +305,39 @@ input[type="radio"] {
   /* text-align: left!important;x */
   gap: 196px;
 }
-.col-1 {
-  align-items: flex-start;
-  gap: 14px;
-  flex-direction: column;
-}
-
-.col-2 {
-  align-items: flex-start;
-  gap: 14px;
-  flex-direction: column;
-}
-
-.col-3 {
-  align-items: flex-start;
-  gap: 14px;
-  text-align: left;
-  flex-direction: column;
+.footer a:hover {
+  text-decoration: underline;
 }
 .footer a {
   align-items: flex-start;
+  font-size: 1.4rem;
+  font-weight: 400;
   color: #fff;
+}
+.first-link {
+  margin-top: 70px;
+  margin-left: 160px;
+}
+
+.col {
+  align-items: flex-start;
+  gap: 14px;
+  flex-direction: column;
 }
 
 .footer-button {
-  margin-left: 30px;
+  font-size: 1rem;
+  margin-left: 164px;
   border-radius: 4px;
-
   background-repeat: no-repeat;
-
-  padding: 3px 6px;
+  padding: 3px;
   width: 100px;
   height: 32px;
-  border: 0.1px solid white;
+  border: 0.1px solid #5e5e5e;
 }
 
 .footer-button svg {
+  margin-left: 8px;
   margin-right: 7px;
   margin-top: 5px;
 }
@@ -350,10 +348,13 @@ input[type="radio"] {
   font-size: 16px;
 }
 .copyright-text {
-  margin-left: 30px;
+  margin-left: 160px;
   margin-top: 30px;
 }
 .copyright-text svg {
   position: relative;
   top: 2px;
+}
+.nad {
+  justify-content: center;
 }
