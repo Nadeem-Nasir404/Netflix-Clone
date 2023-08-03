@@ -1,0 +1,139 @@
+@media screen and (max-width: 900px) {
+  .container {
+    overflow: initial;
+  }
+  .header {
+    width: 120vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    width: 120vh;
+  }
+  html {
+    font-size: 46%;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+  .header {
+    height: 500px;
+  }
+
+  .header-top .logo {
+    width: 100px;
+  }
+
+  .header-top {
+    padding: 5px 10px;
+  }
+  .header-top a {
+    font-size: 2.1rem;
+  }
+  .header-text {
+    margin-top: 45px;
+  }
+  .email-signup input {
+    position: relative;
+    left: 18px;
+    height: 50px;
+    width: 320px;
+  }
+  .get-started-btn {
+    margin-top: 20px;
+    position: relative;
+    left: 90px;
+    padding: 6px 10px 11px 22px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .features-container {
+    margin-top: 35px;
+    justify-content: center;
+    padding: 36px 12%;
+    flex-direction: column-reverse;
+  }
+  .features-section {
+    flex-direction: column;
+  }
+  .text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  #watch {
+    display: flex;
+    flex-direction: column;
+  }
+  #text {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .form {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accordion li label {
+    max-width: 345px;
+    max-height: 70px;
+  }
+  .accordion li {
+    padding: 0.6rem;
+  }
+  .accordion input[type="radio"]:checked + label + .content {
+    max-height: 1000px;
+    max-width: 345px;
+    padding: 23px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 14px;
+    padding: 4px 3px;
+  }
+  .image-col {
+    flex-basis: 100%;
+  }
+  .image-col img {
+    width: 300px;
+  }
+
+  .first-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+
+  .footer a {
+    font-size: 2.2rem;
+    align-items: center;
+  }
+  .col {
+    align-items: center;
+  }
+  .footer-button {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+
+  .copyright-text {
+    display: none;
+  }
+  .nad {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
