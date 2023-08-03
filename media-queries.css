@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 479px) {
   .header {
-    width: 120vh;
+    width: 100vw;
   }
   html {
     font-size: 46%;
