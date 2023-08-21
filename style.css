@@ -359,7 +359,7 @@ input[type="radio"] {
   margin-left: 164px;
   border-radius: 4px;
   background-repeat: no-repeat;
-  padding: 4px;
+  padding: 3px;
   width: 100px;
   height: 32px;
   border: 0.1px solid #5e5e5e;
@@ -367,8 +367,8 @@ input[type="radio"] {
 
 .footer-button svg {
   margin-left: 8px;
-  margin-right: 17px;
-  /* margin-top: 5px; */
+  margin-right: 7px;
+  margin-top: 5px;
 }
 
 .copyright-text p {
