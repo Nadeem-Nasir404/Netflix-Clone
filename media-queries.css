@@ -8,8 +8,17 @@
 }
 /* -------large-mobile------- */
 @media screen and (max-width: 787px) {
-}
+  .features-container {
+    margin-top: 35px;
+    justify-content: center;
+    padding: 36px 12%;
+    flex-direction: column;
+  }
 
+  /* .features-section {
+    flex-direction: row;
+  } */
+}
 @media screen and (max-width: 496px) {
   .container {
     max-width: 100rem;
@@ -86,15 +95,15 @@
   }
 
   .accordion li label {
-    max-width: 345px;
-    max-height: 70px;
+    max-width: 362px;
+    max-height: 68px;
   }
   .accordion li {
     padding: 0.6rem;
   }
   .accordion input[type="radio"]:checked + label + .content {
     max-height: 1000px;
-    max-width: 345px;
+    max-width: 361px;
     padding: 23px;
   }
 

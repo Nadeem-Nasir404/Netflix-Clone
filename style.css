@@ -59,13 +59,16 @@ h3 {
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url(images/mainheader.jpg);
-  background-size: cover;
+
   background-position: center;
   -webkit-background-size: cover;
+  background-size: cover;
   border-bottom: 8px solid #232323;
   min-width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+
+  background-attachment: fixed;
 }
 
 .header-top {
@@ -350,11 +353,13 @@ input[type="radio"] {
 }
 
 .footer-button {
+  display: none;
+  flex-direction: column;
   font-size: 1rem;
   margin-left: 164px;
   border-radius: 4px;
   background-repeat: no-repeat;
-  padding: 3px;
+  padding: 4px;
   width: 100px;
   height: 32px;
   border: 0.1px solid #5e5e5e;
@@ -362,8 +367,8 @@ input[type="radio"] {
 
 .footer-button svg {
   margin-left: 8px;
-  margin-right: 7px;
-  margin-top: 5px;
+  margin-right: 17px;
+  /* margin-top: 5px; */
 }
 
 .copyright-text p {
@@ -375,6 +380,10 @@ input[type="radio"] {
   margin-left: 160px;
   margin-top: 30px;
 }
+svg {
+  fill: #ffffff;
+}
+
 .copyright-text svg {
   position: relative;
   top: 2px;
