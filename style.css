@@ -1,4 +1,4 @@
-/* ----------Resets----------- */
+  /* ----------Resets----------- */
 * {
   margin: 0;
   padding: 0;
@@ -354,7 +354,7 @@ input[type="radio"] {
   margin-left: 164px;
   border-radius: 4px;
   background-repeat: no-repeat;
-  padding: 3px;
+  padding: 1px;
   width: 100px;
   height: 32px;
   border: 0.1px solid #5e5e5e;
